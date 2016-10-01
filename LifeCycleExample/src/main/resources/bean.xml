@@ -6,4 +6,6 @@
 
 	<bean id="MySimpleClass" class="com.med.SimpleClass" init-method="init"
 		destroy-method="destruction"/>
+		
+		<bean id="MyInitSimpleClass" class="com.med.InitSimpleClass" />
 </beans>

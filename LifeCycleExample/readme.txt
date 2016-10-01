@@ -1,1 +1,1 @@
-This is an example about bean life cycle
+This is an example about bean life cycle and BeanPostProcessor

@@ -1,0 +1,1 @@
+This is an example about Singleton and Prototype scope

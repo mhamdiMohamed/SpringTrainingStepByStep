@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:a="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="person" class="com.med.Person" p:name="MHAMDI" 
+		p:lastName="Mohamed" p:gender="Male" p:address-ref="address" />
+
+	<bean id="address" class="com.med.Address" a:zipCode="1003"
+		a:street="Alain Savary" a:city="El Khadhra city" />
+</beans>

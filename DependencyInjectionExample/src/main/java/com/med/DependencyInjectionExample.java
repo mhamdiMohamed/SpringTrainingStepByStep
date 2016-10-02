@@ -13,5 +13,8 @@ public class DependencyInjectionExample {
 		
 		//setter based injection
 		System.out.println(applicationContext.getBean("theSamePerson"));
+		
+		//inner bean injection
+		System.out.println(applicationContext.getBean("anotherSamePerson"));
 	}
 }

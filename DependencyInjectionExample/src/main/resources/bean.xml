@@ -6,21 +6,34 @@
 
 	<bean id="person" class="com.med.Person">
 		<constructor-arg ref="address" />
-		<property name="name" value="MHAMDI"/>
-		<property name="lastName" value="Mohamed"/>
-		<property name="gender" value="Male"/>
+		<property name="name" value="MHAMDI" />
+		<property name="lastName" value="Mohamed" />
+		<property name="gender" value="Male" />
 	</bean>
 	<bean id="address" class="com.med.Address">
-		<property name="zipCode" value="1003"/>
-		<property name="street" value="Alain Savary"/>
-		<property name="city" value="El Khadhra city"/>
+		<property name="zipCode" value="1003" />
+		<property name="street" value="Alain Savary" />
+		<property name="city" value="El Khadhra city" />
 	</bean>
-	
-		<bean id="theSamePerson" class="com.med.Person">
-		<property name="address" ref="address"/>
-		<property name="name" value="MHAMDI"/>
-		<property name="lastName" value="Mohamed"/>
-		<property name="gender" value="Male"/>
+
+	<bean id="theSamePerson" class="com.med.Person">
+		<property name="address" ref="address" />
+		<property name="name" value="MHAMDI" />
+		<property name="lastName" value="Mohamed" />
+		<property name="gender" value="Male" />
 	</bean>
-	
+
+	<bean id="anotherSamePerson" class="com.med.Person">
+		<property name="address">
+			<bean class="com.med.Address">
+				<property name="zipCode" value="1003" />
+				<property name="street" value="Alain Savary" />
+				<property name="city" value="El Khadhra city" />
+			</bean>
+		</property>
+		<property name="name" value="MHAMDI" />
+		<property name="lastName" value="Mohamed" />
+		<property name="gender" value="Male" />
+	</bean>
+
 </beans>

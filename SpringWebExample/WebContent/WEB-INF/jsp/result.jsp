@@ -21,6 +21,9 @@
 	</table>
 	<br/>
 	<br/>
+	${Activity}
 	<br/>
-	<a href="person">return</a>
+	<br/>
+	<br/>
+	<a href="toDo.jsp">return</a>
 </body>

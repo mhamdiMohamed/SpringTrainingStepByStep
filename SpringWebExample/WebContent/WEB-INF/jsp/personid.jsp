@@ -4,17 +4,9 @@
 <title>Spring MVC Form Handling</title>
 </head>
 <body>
-	<h2>Person Information</h2>
-	<form:form method="POST" action="/SpringWebExample/addPerson">
+	<h2>Person id</h2>
+	<form:form method="POST" action="/SpringWebExample/removePerson">
 		<table>
-			<tr>
-				<td><form:label path="name">Name</form:label></td>
-				<td><form:input path="name" /></td>
-			</tr>
-			<tr>
-				<td><form:label path="age">Age</form:label></td>
-				<td><form:input path="age" /></td>
-			</tr>
 			<tr>
 				<td><form:label path="id">id</form:label></td>
 				<td><form:input path="id" /></td>
